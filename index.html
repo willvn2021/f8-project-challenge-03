@@ -6,6 +6,11 @@
         <title>F8 Project Challenge 03</title>
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <!-- Embed Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,7 +98,7 @@
         <!-- Style CSS  -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body style="height: 7000px">
+    <body>
         <!-- Header -->
         <header class="header">
             <div class="container">
@@ -152,7 +157,7 @@
                         <p class="section-label hero__label">
                             Digital Smart Wallet
                         </p>
-                        <h1 class="hero__heading">
+                        <h1 class="hero__heading" data-aos="fade-right">
                             Digital
                             <strong class="hero__heading--strong">
                                 Payment
@@ -352,7 +357,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-deposite">
+                        <div class="card-deposite" data-aos="fade-down">
                             <img
                                 src="./assets/img/deposite-purple.svg"
                                 alt=""
@@ -360,7 +365,7 @@
                             <span class="card-deposite__text">Deposite</span>
                             <span class="card-deposite__price">$32000</span>
                         </div>
-                        <div class="card-secured">
+                        <div class="card-secured" data-aos="fade-up-left">
                             <img src="./assets/img/money-green.svg" alt="" />
                             <div class="card-secured__info">
                                 <span class="card-secured__price">$1.310</span>
@@ -369,7 +374,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="card-interest">
+                        <div class="card-interest" data-aos="flip-right">
                             <span class="card-interest__percent">0%</span>
                             <span class="card-interest__text"> Interest </span>
                         </div>
@@ -395,14 +400,20 @@
                                     alt=""
                                     class="about__people-bg"
                                 />
-                                <div class="about__card-bank">
+                                <div
+                                    class="about__card-bank"
+                                    data-aos="fade-right"
+                                >
                                     <img
                                         src="./assets/img/bank-purple.svg"
                                         alt=""
                                         class="about__icon-bank"
                                     />
                                 </div>
-                                <div class="about__card-tick">
+                                <div
+                                    class="about__card-tick"
+                                    data-aos="fade-down-left"
+                                >
                                     <div class="about__card-square">
                                         <img
                                             src="./assets/img/tick-blue.svg"
@@ -540,7 +551,7 @@
                                     alt=""
                                     class="credit-card__decor-bottom"
                                 />
-                                <div class="card-money">
+                                <div class="card-money" data-aos="fade-down">
                                     <div class="card-money_wrap">
                                         <div class="card-money__icon">
                                             <img
@@ -563,7 +574,7 @@
                                         <p class="card-money__date">Sep 23</p>
                                     </div>
                                 </div>
-                                <div class="card-income">
+                                <div class="card-income" data-aos="fade-left">
                                     <div class="card-income__icon">
                                         <img
                                             src="./assets/img/received-green.svg"
@@ -590,7 +601,10 @@
                                         class="service__people"
                                     />
 
-                                    <div class="method">
+                                    <div
+                                        class="method"
+                                        data-aos="zoom-out-left"
+                                    >
                                         <p class="method__heading">
                                             Choose payment method:
                                         </p>
@@ -640,7 +654,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="money-circle">
+                                    <div
+                                        class="money-circle"
+                                        data-aos="zoom-in"
+                                    >
                                         <img
                                             src="./assets/img/money-white.svg"
                                             alt=""
@@ -990,5 +1007,9 @@
                 </p>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
